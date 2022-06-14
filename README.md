@@ -67,7 +67,7 @@ Deathnote.gg 서비스에서는 이런 문제를 해결하기 위해서 노력�
 유저가 게임에 미치는 영향을 100점 만점으로 환산하여 직관적으로 정보를 제공합니다.
 <br/>
 
-<p align="center"><img src="./images/deathnote-score.png" width="70%"/></p>
+<p align="center"><img src="https://github.com/dong149/deathnote-api-server/blob/master/images/deathnote-score.png" width="70%"/></p>
 
 <h4><p align="center">
 결과값 예시 화면
@@ -95,7 +95,7 @@ Deathnote.gg 서비스에서는 이런 문제를 해결하기 위해서 노력�
 
 <br/>
 
-<p align="center"><img src="./images/deathnote-report.png" width="50%"/></p>
+<p align="center"><img src="https://github.com/dong149/deathnote-api-server/blob/master/images/deathnote-report.png" width="50%"/></p>
 <h4><p align="center">
 그래프 및 작성 뷰
 </p></h4><br/>
@@ -124,7 +124,7 @@ Report를 작성 가능합니다. Report에는 칭찬과 리폿 두 가지 중�
 
 <br/>
 
-<p align="center"><img src="./images/match.png" width="70%"/></p>
+<p align="center"><img src="https://github.com/dong149/deathnote-api-server/blob/master/images/match.png" width="70%"/></p>
 <h4><p align="center">
 현재 리뉴얼 작업 중 ( 여러 지표가 추가될 예정 )
 </p></h4><br/>
@@ -171,7 +171,7 @@ Report를 작성 가능합니다. Report에는 칭찬과 리폿 두 가지 중�
 
 <br/>
 
-<p align="center"><img src="./images/deathnote-note.png" width="50%"/></p>
+<p align="center"><img src="https://github.com/dong149/deathnote-api-server/blob/master/images/deathnote-note.png" width="50%"/></p>
 <h4><p align="center">
 신고 작성 기능
 </p></h4><br/>
@@ -228,7 +228,7 @@ Riot측에서 어느 정도의 Public함을 증명하기 전까지는 API의 요
 4. Lightgbm 모델을 사용하여 Feature 들의 Importance를 추출합니다.
 5. 알고리즘에 해당 지표들을 반영합니다. ( **반영 완료** )
 
-<p align="center"><img src="./images/deathnote-ml-result.png" width="70%"/></p>
+<p align="center"><img src="https://github.com/dong149/deathnote-api-server/blob/master/images/deathnote-ml-result.png" width="70%"/></p>
 <h4><p align="center">
 실제 결과 화면 뷰 
 </p></h4><br/>
