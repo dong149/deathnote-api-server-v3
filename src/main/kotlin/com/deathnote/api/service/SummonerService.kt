@@ -9,6 +9,11 @@ class SummonerService {
     private val log = logger()
 
     fun getSummoner(): Summoner {
-        return Summoner("임시")
+        return Summoner(
+            accountId = "accountId",
+            summonerId = "test",
+            summonerName = "왼손잡이들",
+            summonerDecodedName = "test"
+        )
     }
 }
