@@ -41,6 +41,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     annotationProcessor("org.projectlombok:lombok")
     compileOnly("org.projectlombok:lombok")
+    implementation ("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.0")
 }
 
 tasks.withType<KotlinCompile> {

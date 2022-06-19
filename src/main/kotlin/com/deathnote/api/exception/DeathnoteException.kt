@@ -1,7 +1,7 @@
 package com.deathnote.api.exception
 
 import org.springframework.http.HttpStatus
-1
+
 open class DeathnoteException(
     status: HttpStatus,
     message: String
