@@ -21,7 +21,7 @@ class SummonerService(
         )
     }
 
-    fun getSummonerDto(summonerName: String): SummonerDto {
+    fun getSummonerDto(summonerName: String): SummonerDto? {
         log.info("request summoner dto. summonerName : {}", summonerName)
         return riotAdapter.getSummonerDto(summonerName)
     }
