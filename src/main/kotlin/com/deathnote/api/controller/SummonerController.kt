@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/v1/summoner")
+@RequestMapping("/v3/summoner")
 class SummonerController(private val summonerService: SummonerService) {
 
     @GetMapping
