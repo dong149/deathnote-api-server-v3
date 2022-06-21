@@ -5,9 +5,11 @@ import com.deathnote.api.exception.DeathnoteException
 import com.deathnote.api.exception.ErrorCode
 import com.deathnote.api.model.domain.Summoner
 import com.deathnote.api.model.dto.riot.SummonerDto
+import com.deathnote.api.model.vo.SummonerInfo
 import com.deathnote.api.repository.SummonerRepository
 import com.deathnote.api.utils.logger
 import org.springframework.stereotype.Service
+import org.springframework.transaction.annotation.Transactional
 
 @Service
 class SummonerService(
@@ -16,7 +18,8 @@ class SummonerService(
 ) {
     private val log = logger()
 
-    fun getSummoner(): Summoner {
+    // TODO : 제거
+    fun getSummonerInfo(): Summoner {
         return Summoner(
             accountId = "accountId",
             summonerId = "test",
@@ -26,7 +29,8 @@ class SummonerService(
         )
     }
 
-    fun getSummoner(name: String): Summoner {
+    @Transactional(readOnly = true)
+    fun getSummonerInfo(name: String): SummonerInfo {
         var summoner = summonerRepository.findBySummonerName(name)
 
         if (summoner == null) {
@@ -34,7 +38,7 @@ class SummonerService(
             summoner = summonerDto.toEntity(summonerDto)
         }
 
-        return summonerRepository.save(summoner)
+        return SummonerInfo.of(summonerRepository.save(summoner))
     }
 
     fun getSummonerDto(summonerName: String): SummonerDto? {
