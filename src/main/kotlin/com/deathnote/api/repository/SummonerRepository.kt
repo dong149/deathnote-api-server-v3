@@ -4,5 +4,5 @@ import com.deathnote.api.model.domain.Summoner
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface SummonerRepository : JpaRepository<Summoner, Long> {
-
+    fun findBySummonerName(summonerName: String): Summoner? = null
 }

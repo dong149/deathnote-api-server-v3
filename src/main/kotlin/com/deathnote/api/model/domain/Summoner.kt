@@ -18,7 +18,7 @@ class Summoner(
     val summonerName: String,
 
     @Column(nullable = false)
-    val summonerDecodedName: String,
+    val puuid: String,
 
     @Column(nullable = true)
     val profileIconId: Int? = null,
