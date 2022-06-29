@@ -59,6 +59,7 @@ data class ParticipantDto(
     val riotIdTagline: String? = null,
     val role: String? = null,
     val sightWardsBoughtInGame: Int? = null,
+    val summonerId: String? = null,
     val summonerLevel: Int? = null,
     val summonerName: String? = null,
     val teamEarlySurrendered: Boolean? = null,

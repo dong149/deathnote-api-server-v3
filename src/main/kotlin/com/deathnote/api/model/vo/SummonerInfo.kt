@@ -5,6 +5,7 @@ import com.deathnote.api.model.domain.Summoner
 data class SummonerInfo(
     val summonerName: String,
     val accountId: String,
+    val puuid: String,
     val score: Int?
 ) {
     companion object {
@@ -12,6 +13,7 @@ data class SummonerInfo(
             return SummonerInfo(
                 summonerName = summoner.summonerName,
                 accountId = summoner.accountId,
+                puuid = summoner.puuid,
                 score = summoner.score
             )
         }
@@ -21,6 +23,7 @@ data class SummonerInfo(
 data class SummonerInfoDto(
     val summonerName: String,
     val accountId: String,
+    val puuid: String,
     val score: Int?
 ) {
     companion object {
@@ -28,6 +31,7 @@ data class SummonerInfoDto(
             return SummonerInfoDto(
                 summonerName = summoner.summonerName,
                 accountId = summoner.accountId,
+                puuid = summoner.puuid,
                 score = summoner.score
             )
         }
