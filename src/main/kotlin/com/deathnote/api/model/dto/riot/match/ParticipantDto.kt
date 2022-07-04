@@ -1,5 +1,7 @@
 package com.deathnote.api.model.dto.riot.match
 
+import kotlin.reflect.full.memberProperties
+
 data class ParticipantDto(
     val participantId: Int? = null,
     val teamId: Int? = null,
@@ -87,4 +89,11 @@ data class ParticipantDto(
     val wardsKilled: Int? = null,
     val wardsPlaced: Int? = null,
     val win: Boolean? = null
-)
+) {
+    fun printTest() {
+        this::class.memberProperties.forEach {
+            println(it.name)
+            println(it.getter.call(this))
+        }
+    }
+}
